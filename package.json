@@ -1,9 +1,9 @@
 {
-  "name": "html-tag-wrapper",
-  "displayName": "html tag wrapper",
-  "description": "wrap selected html tag by press ctrl+i, you can change the wrapper tag name simply too",
-  "version": "0.2.3",
-  "publisher": "hwencc",
+  "name": "vscode-tag-wrapper",
+  "displayName": "HTML Tag Wrapper",
+  "description": "VSCode plugin that wraps selected HTML tag by pressing alt+w (includes customization options)",
+  "version": "0.1.0",
+  "publisher": "Drumstix42",
   "icon": "images/icon.png",
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   "contributes": {
     "keybindings": [
       {
-        "key": "ctrl+i",
+        "key": "alt+w",
         "command": "extension.wrapTag",
         "when": "editorTextFocus"
       }

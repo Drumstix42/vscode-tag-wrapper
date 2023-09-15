@@ -16,9 +16,9 @@ export function activate(context: ExtensionContext) {
     let selectedText = editor.document.getText(selection);
     let wrapper = new TagWrapper(selectedText, selection);
 
-    if (wrapper.isAvaliableTag) {
-      editor.insertSnippet(wrapper.snippet); //insert snippet to replace the selection text
-    }
+    //if (wrapper.isAvaliableTag) {
+    editor.insertSnippet(wrapper.snippet); //insert snippet to replace the selection text
+    //}
 
   })
 
@@ -43,9 +43,9 @@ class TagWrapper {
     return this.generateSnippet();
   }
 
-  get isAvaliableTag(): boolean {
-    return /\<(.|\n)*\>/g.test(this.selectedText);
-  }
+  //get isAvaliableTag(): boolean {
+  //  return /\<(.|\n)*\>/g.test(this.selectedText);
+  //}
 
   private generateSnippet(): SnippetString {
     let sn = new SnippetString();
